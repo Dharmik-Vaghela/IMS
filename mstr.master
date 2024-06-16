@@ -1,0 +1,40 @@
+﻿<%@ Master Language="VB" CodeFile="mstr.master.vb" Inherits="mstr" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+   
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Image ID="Image1" runat="server" Height="120px" 
+            ImageUrl="~/Img/c684645e8150a86c-removebg-preview.png" Width="120px" />
+         <div class="navbar">
+                <ul>
+                    <li><a href="stud_reg.aspx">Registration</a></li>
+                    <li><a href="stud_attend.aspx">Attendance</a></li>
+                    <li><a href="fees.aspx">Fees</a></li>
+                    <li><a href="result.aspx">Result</a></li>
+                    <li><a href="library.aspx">Library</a></li>
+                    <li><a href="payroll.aspx" visible="false">Payroll</a></li>
+                    <li><a href="usactivity.aspx">User Activity</a></li>
+                    <li><a href="login.aspx">Logout</a></li>
+                </ul>
+             </div>
+             
+    </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    
+    </form>
+    <div class="marquee">
+    <marquee><u>Developed By : Dharmik R Vaghela</u></marquee>
+    </div>
+</body>
+
+</html>
